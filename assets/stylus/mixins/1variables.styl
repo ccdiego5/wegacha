@@ -1,0 +1,89 @@
+// ===============================
+// Open sans
+// ===============================
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700italic,700,800,800italic')
+
+// ===============================
+// Open sans
+// ===============================
+OpenSans = 'Open Sans', sans-serif
+
+
+
+// ===============================
+// Colors
+// ===============================
+negro = #15141a
+azul = #008ed6
+gris = #eeeeee
+blanco = #eeeeee
+font-gris = #999999
+font-blue = #008ed6
+font-negro = #1a1a1a
+
+// ===============================
+// Utility
+// ===============================
+
+bradius(n)
+	border-radius n
+	
+bg-rgba(color, grade)
+	background-color rgba(color, grade)
+
+bg-color(bgcolor)
+	background-color bgcolor
+	
+bg-pure(bgpure)
+	background bgpure
+
+bg-repeat(repat)
+	background-repeat repat
+
+bg-position(position1, position2)
+	background-position position1 position2
+
+bg-size(size)
+	background-size size
+
+bg-image(item)
+	background-image item
+	
+ttup()
+	text-transform uppercase
+
+.font-OpenSans
+	font-family font-OpenSans
+	
+.font-Montserrat
+	font-family font-OpenSans
+	
+.mt-10
+	margin-top 10px
+
+.mt-20
+	margin-top 20px
+	+below(768px)
+		margin-top 0px
+		
+.mt-30
+	margin-top 30px
+	@media(min-width:320px) and (max-width:425px)
+		margin-top 5vh
+	+below(768px)
+		margin-top 15px
+		
+.mt-40
+	margin-top 40px
+	
+.mb-40
+	margin-bottom 40px
+	
+.mt-60
+	margin-top 60px !important	
+	
+rupture.scale = 0 320px 425px 768px 1024px 1800px
+rupture.scale-names = 'xs' 's' 'm' 'l' 'xl' 'hd'
+
+//+below
+//+between

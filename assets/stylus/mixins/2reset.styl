@@ -1,0 +1,94 @@
+h1
+h2
+h3
+h4
+h5
+h6
+	font-family OpenSans !important
+	
+// p 
+// 	line-height 1.5
+// 	font-size 1.5rem !important
+	
+.btn
+	relative()
+	z-index 1030
+	font-size 1.5rem !important
+	font-family OpenSans !important
+	font-weight 600 !important
+	/*box-shadow 0 8px 10px -4px rgba(0,0,0, .90)*/
+	bradius(3px !important)
+	&:hover
+	&:focus
+	&:active
+		transition all 0.4s ease-in-out
+		//box-shadow 0 8px 10px -4px rgba(0,0,0, .90) !important
+		outline none !important
+		
+	.active 
+		//box-shadow 0 8px 10px -4px rgba(0,0,0, .90) !important
+				
+.btn-lg
+	padding 12px 45px !important	
+	+below(435px)
+		padding 8px 12px !important
+		font-size 1rem !important
+
+
+.navbar-default
+	background-color transparent !important
+	border none !important
+	padding-top 30px
+
+.nav>li>a{
+    padding: 10px 15px 10px 20px !important;
+}
+
+.nav 
+	a 
+		color blanco !important
+		&:hover
+			color azul !important
+	li.active 
+		// border-bottom: 2px solid azul
+		a
+			background-color: transparent !important
+			&:before
+				content: ''
+				absolute left 25% bottom 0
+				width: 55%
+				height 1px 
+				border-bottom: 2px solid azul
+
+
+.btn
+	ttup()
+
+.btn-primary 
+	bg-color(azul)
+
+.btn-white
+	bg-color(transparent)
+	color blanco 
+	border 1px solid font-gris 
+	&:hover 
+		bg-color(blanco)
+		color font-negro
+
+.btn-white-2
+	bg-color(blanco)
+	color negro 
+	border 1px solid blanco
+	&:hover 
+		bg-color(negro)
+		color blanco
+		border-color blanco
+
+.btn-black
+	bg-color(negro)
+	color blanco 
+	border 1px solid negro 
+	&:hover 
+		bg-color(blanco)
+		color negro
+		border-color negro
